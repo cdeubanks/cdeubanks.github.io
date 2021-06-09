@@ -1,0 +1,416 @@
+﻿@model personalsiteV2.Models.ContactFormModel
+
+
+@{
+    ViewBag.Title = " ";
+
+}
+
+<!-- Header -->
+<div id="header">
+
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="~/images/ceubanks_48x48.jpg" alt="" /></span>
+            <h1 id="title">Chris Eubanks</h1>
+            <p>Full Stack Web Developer</p>
+            <p>Kansas City, MO</p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-file-text">Résumé</span></a></li>
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                <li><a href="#links" id="links-link" class="skel-layers-ignoreHref"><span class="icon fa-link">Links</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+</div>
+
+<!-- Main -->
+<div id="main">
+
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
+
+            <h2 id="nameToggle">Chris Eubanks</h2>
+
+            <div class="row">
+                <article class="6u 12u$(mobile)">
+                    <a class="image fit"><img src="~/images/ceubanks_600x800.jpg" alt="" /></a>
+                </article>
+
+
+                <header class="6u 12u$(mobile)">
+                    <h2>
+                        About Me
+                    </h2>
+                    <p>
+                        My name is Chris Eubanks. I have been in the restaurant industry for over 10 years where I have exercised skills such as Project, Team, & Time Management. I am looking to transition into a career in Web Development because I’ve always loved creating, customizing, and tinkering. Web Development allows me to implement all three. <br /><br />
+                    </p>
+                    <p>
+                        I have recently graduated from Centriq’s Full-Stack Web Developer program where I learned languages for the front end (such as <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong>), middle tier (<strong>C#</strong>), and back end(<strong>SQL</strong>) of development. If you are aware of any opportunities where I could implement these skills and passions, please
+                        <a style="text-decoration:underline;" href="#contact" id="contact-link" class="scrolly">contact</a> me .
+                    </p>
+
+
+
+                </header>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="two">
+        <div class="container">
+
+            <header>
+                <h2>Portfolio</h2>
+            </header>
+
+            <p>
+                Projects built with various languages in Visual Studio.
+            </p>
+
+            <div id="class">
+                <div class="row">
+                    <article class="4u item 12u$(mobile)">
+                        <a class="image fit"><img src="~/images/wgssc.png" alt="" /></a>
+                        <header>
+                            <h3>Wally's Guitar Shop (Coming Soon)</h3>
+                            <p><i>Full Stack</i></p>
+                            <p>Created a secure application for managing product data. Application is built to simulate an online store front with a shopping cart. Administrators have the ability to manage product, category and vendor data.</p>
+                        </header>
+                    </article>
+                    <article class="4u item 12u$(mobile)">
+                        <a href="~/Drums.html" target="_blank" class="image fit"><img src="~/images/jsd_sc.jpg" alt="" /></a>
+                        <header>
+                            <h3>JavaScript Drum Kit</h3>
+                            <p><i>Front End</i></p>
+                            <p>Simple drum kit made with JavaScript. Plays an audio file upon specific key presses and animates its respective box in the UI.</p>
+                        </header>
+                    </article>
+                    <article class="4u item 12u$(mobile)">
+                        <a href="http://fsdp.cdeubanks.com" target="_blank" class="image fit"><img src="~/images/fsdpsc.png" alt="" /></a>
+                        <header>
+                            <h3>Internal Job Board</h3>
+                            <p><i>Full Stack</i></p>
+                            <p>
+                                Created a secure data-driven ASP.NET MVC application from design through deployment for managing the tracking and organization of applications and job openings within a company. Administrators have the ability to manage employee, location data and all details relating to applications and job openings.
+                            </p>
+                        </header>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="about" class="three">
+        <div class="container">
+
+            <header>
+                <h2>Résumé</h2>
+            </header>
+            <div class="row">
+                <div class="6u 12u$(mobile)">
+                    <a style="background-color:black;border:#0080bb 1px solid;" href="~/assets/Christopher Eubanks Resume IT.pdf" target="_blank" type="submit" class="button" id="btn" value="">View PDF</a>
+                </div>
+
+                <div class="6u 12u$(mobile)">
+                    <a style="background-color:black;border:#0080bb 1px solid;" href="~/assets/Christopher Eubanks Resume IT.pdf" type="submit" class="button" id="btn" value="" download="">Download PDF</a>
+                </div>
+            </div>
+            <br />
+            <h3>Summary of Qualifications</h3>
+            <ul style="text-align:left">
+                <li>Solid foundational knowledge of designing and developing full-stack web applications using .NET framework.</li>
+                <li>Adapts to changing needs and standards.</li>
+                <li>Able to plan an efficient direction for the work load.</li>
+            </ul>
+
+            <h3>Technical Skills</h3>
+            <ul style="text-align:left">
+                <li><strong>Front End: </strong>HTML5, JavaScript, jQuery, jQueryUI, CSS3, Responsive/Mobile Web Development, Bootstrap</li>
+                <li><strong>Middle Tier: </strong>Visual Studio, C#.NET, ASP.NET, LINQ, MVC, EF</li>
+                <li><strong>Back End: </strong>ADO.NET, SQL, SQL Server, SSMSE</li>
+            </ul>
+
+            <h3>Education</h3>
+            <div style="text-align:left;">
+                <p style="margin-bottom:0px"><strong>Centriq Training</strong> _ Leawood, KS</p>
+                <p style="margin-bottom:0px;">August 2017 - February 2018</p>
+
+                <p><i>Full-Stack Web Developer Program</i></p>
+
+                <p style="margin-bottom:0px; text-decoration:underline;">Core Competencies: </p>
+                <ul>
+                    <li>MVC Framework</li>
+                    <li>Trouble Shooting & Debugging</li>
+                    <li>Source Control</li>
+                    <li>Agile/Scrum (Created Team Project)</li>
+                    <li>Website Deployment</li>
+                    <li>Pair Programming</li>
+                    <li>Code Review</li>
+                    <li>Professionalism, Teamwork, Problem Solving & Effective Communication</li>
+                </ul>
+            </div>
+
+            <h3>Professional Experience</h3>
+            <div style="text-align:left;">
+                <p style="margin-bottom:0px"><strong>Outback Steakhouse</strong> _ Independence, MO</p>
+                <p style="margin-bottom:0px;">February 2008 - Present</p>
+
+                <p><i>Prep Cook</i></p>
+
+                <p style="margin-bottom:0px; text-decoration:underline;">Responsibilities: </p>
+                <ul>
+                    <li>Maintained high levels of product quality to ensure customer satisfaction.</li>
+                    <li>Ensured cleanliness and organizational standards were met daily to maximize efficiency.</li>
+                    <li>Collaborated with coworkers and management to determine any items needed overlooked in the prep list.</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="four">
+        <div class="container">
+
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <p>
+
+            </p>
+
+            <!-- contact buttons -->
+
+            <div class="row">
+                <div class="6u 12u$(mobile)">
+                    Email _
+                    <a href="mailto:no-reply@cdeubanks.com" class="icon fa fa-envelope"><span class="label">Email</span></a>
+                </div>
+                <div class="6u 12u$(mobile)">
+                    LinkedIn _
+                    <a href="https://www.linkedin.com/in/cdeubanks/" target="_blank" class="icon fa fa-linkedin"><span class="label">LinkedIn</span></a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="row">
+
+                    <div class="6u 12u$(mobile)">
+                        @Html.TextBoxFor(x => x.Name,
+                        new
+                        {
+                            @class = "form-control",
+                            placeholder = "Name"
+                        })
+                        @Html.ValidationMessageFor(x => x.Name)
+                    </div>
+
+                    <div class="6u 12u$(mobile)">
+                        @Html.TextBoxFor(x => x.Email,
+                        new
+                        {
+                            @class = "form-control",
+                            placeholder = "Email",
+                        })
+                        @Html.ValidationMessageFor(x => x.Email)
+                    </div>
+
+                    <div class="12u$">
+                        @Html.TextBoxFor(x => x.Subject,
+                        new
+                        {
+                            @class = "form-control",
+                            placeholder = "Subject"
+                        })
+                        @Html.ValidationMessageFor(x => x.Subject)
+                    </div>
+
+                    <div class="12u$">
+                        @Html.TextAreaFor(x => x.Message,
+                        new
+                        {
+                            @class = "form-control",
+                            id = "message",
+                            placeholder = "Message",
+                        })
+                        @Html.ValidationMessageFor(x => x.Message)
+                    </div>
+
+                    <div class="12u$"><input style="background-color: black; border: #0080bb 1px solid;" type="submit" name="submit" value="Send" /></div>
+                </div>
+            }
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Links -->
+    <section id="links" class="five">
+        <div class="container">
+
+            <header>
+                <h2>Other Talented Developers</h2>
+            </header>
+
+            <!-- start classmates -->
+
+
+
+            <div id="class">
+
+                <div class="row">
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://davidanstine.com/" target="_blank" class="image fit"><img src="~/images/danstine_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>David Anstine</h3>
+                        </header>
+                    </article>
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://travisbarnhart.com/" target="_blank" class="image fit"><img src="~/images/tbarnhart_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Travis Barnhart</h3>
+                        </header>
+                    </article>
+
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://budcampbell.com/" target="_blank" class="image fit"><img src="~/images/bcampbell_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Douglas Campbell</h3>
+                        </header>
+                    </article>
+
+
+
+                </div>
+
+                <div class="row">
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://ralphryan.net/" target="_blank" class="image fit"><img src="~/images/rgarcia_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Ralph Garcia</h3>
+                        </header>
+                    </article>
+
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://www.kollinizard.com/" target="_blank" class="image fit"><img src="~/images/kizard_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Kollin Izard</h3>
+                        </header>
+                    </article>
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://jeremyrutherford.com/" target="_blank" class="image fit"><img src="~/images/jrutherford_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Jeremy Rutherford</h3>
+                        </header>
+                    </article>
+
+
+                </div>
+
+                <div class="row">
+
+
+                    <!--<article class="item 12u$(mobile)">
+                        <a href="http://dylantitus.net/" target="_blank" class="image fit"><img src="~/images/dtitus_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Dylan Titus</h3>
+                        </header>
+                    </article>-->
+
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://codingwithbrainsandbeauty.com/" target="_blank" class="image fit"><img src="~/images/avogelsberg_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Andrea Vogelsberg</h3>
+                        </header>
+                    </article>
+
+                    <article class="item 12u$(mobile)">
+                        <a href="http://www.mikewieners.com/" target="_blank" class="image fit"><img src="~/images/mwieners_200x200.jpg" alt="" /></a>
+                        <header>
+                            <h3>Mike Wieners</h3>
+                        </header>
+                    </article>
+
+
+                </div>
+
+            </div>
+            <!-- end classmates -->
+
+        </div>
+    </section>
+
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; @DateTime.Now.Year Chris Eubanks.  All rights reserved.</li>
+        <li>Design: Chris Eubanks &amp; <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+    </ul>
+    <br />
+    <a class="glitch" href="#"><img src="~/images/vogava_50x44.jpg" title="...a casual loop within the link's mechanism, suggesting that the clicking process somehow binds space and time into..." /></a>
+
+</div>
+
+
